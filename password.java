@@ -58,7 +58,8 @@ public class password {
 		}
 	}
 	
-	private static boolean check(int min, int max, char letter, String password){
+	private static boolean check(int min, int max, char letter, String password){//checks is password has certain amount of a 
+										     //types of letter between or equal to the min or the max amount
 		int counter = 0;
 		System.out.println(password);
 		for(int loop = 0; loop < password.length(); loop++) {
@@ -72,7 +73,7 @@ public class password {
 		}
 		return false; 
 	}
-	private static boolean check1(int min, int max, char letter, String password){
+	private static boolean check1(int min, int max, char letter, String password){//checks if the position of min or max in the password cointain the letter passed.
 		
 		if(letter == password.charAt(min-1) && letter == password.charAt(max-1)) {
 			//System.out.println(letter +" " + password.charAt(min-1) + " " + password.charAt(max-1));
